@@ -1,13 +1,29 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span>My App</span>
-    <span class="example-spacer"></span>
-    <button
-      mat-icon-button
-      class="example-icon"
-      aria-label="Example icon-button with menu icon"
-    >
+    <span class="brand"><a routerLink="">Angular Material Prototyper</a></span>
+    <span class="menu-spacer"></span>
+    <button mat-icon-button>
+      <mat-icon>control_point</mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon>folder_open</mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon>save</mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon>undo</mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon>redo</mat-icon>
+    </button>
+    <span class="menu-spacer"></span>
+    <button mat-button [matMenuTriggerFor]="menu">
       <mat-icon>menu</mat-icon>
     </button>
-  </mat-toolbar-row></mat-toolbar
->
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>{{ "settings.server" | transloco }}</button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
+

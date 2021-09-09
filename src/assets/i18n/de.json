@@ -1,0 +1,10 @@
+{
+  "warning": {
+    "resolutionTooLow": {
+      "title": ""
+    }
+  },
+  "settings": {
+    "server": "Server"
+  }
+}
