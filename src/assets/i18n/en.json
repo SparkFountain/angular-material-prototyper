@@ -2,7 +2,7 @@
   "settings": {
     "server": "Server"
   },
-  "elementToolbar": {
+  "componentToolbar": {
     "category": {
       "choose": "Choose a category",
       "all": "All",
@@ -43,6 +43,10 @@
     "tabs": "Tabs",
     "toolbar": "Toolbar",
     "tooltip": "Tooltip",
-    "tree": "Tree"
+    "tree": "Tree",
+    "finder": {
+      "label": "Find a component",
+      "placeholder": "Button"
+    }
   }
 }

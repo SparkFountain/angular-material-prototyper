@@ -1,0 +1,15 @@
+mat-card {
+  display: flex;
+  flex-direction: column;
+
+  .button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    button {
+      width: 50%;
+    }
+  }
+}

@@ -1,1 +1,20 @@
-<p>button works!</p>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ 'componentToolbar.button' | transloco }}</mat-card-title>
+  </mat-card-header>
+  <!-- <div class="button-group">
+    <button mat-raised-button color="default">Click</button>
+    <button mat-stroked-button color="primary">Warn</button>
+  </div> -->
+
+  <div class="button-group">
+    <button mat-flat-button color="accent">Cancel</button>
+    <button
+      mat-mini-fab
+      color="accent"
+      aria-label="Example icon button with a plus one icon"
+    >
+      <mat-icon>plus_one</mat-icon>
+    </button>
+  </div>
+</mat-card>

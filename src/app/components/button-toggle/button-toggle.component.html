@@ -1,1 +1,17 @@
-<p>button-toggle works!</p>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ 'componentToolbar.buttonToggle' | transloco }}</mat-card-title>
+  </mat-card-header>
+
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle value="bold">
+      <mat-icon>format_align_left</mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle value="italic">
+      <mat-icon>format_align_center</mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle value="underline">
+      <mat-icon>format_align_right</mat-icon>
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+</mat-card>

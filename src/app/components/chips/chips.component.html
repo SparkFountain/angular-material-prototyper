@@ -1,1 +1,11 @@
-<p>chips works!</p>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ 'componentToolbar.chips' | transloco }}</mat-card-title>
+  </mat-card-header>
+
+  <mat-chip-list aria-label="Fish selection">
+    <mat-chip [removable]="true">One fish</mat-chip>
+    <mat-chip color="primary" selected>Primary fish</mat-chip>
+    <mat-chip color="accent" selected>Accent fish</mat-chip>
+  </mat-chip-list>
+</mat-card>

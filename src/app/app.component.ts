@@ -19,7 +19,7 @@ export interface User {
 export class AppComponent implements OnInit {
   createNewPrototype$!: Observable<boolean>;
 
-  // element related variables
+  // component related variables
   myControl = new FormControl();
   options: User[] = [
     {name: 'Mary'},

@@ -18,13 +18,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatBadgeModule } from '@angular/material/badge';
+import { MatInputModule } from '@angular/material/input';
 import { ComponentsModule } from './components/components.module';
+import { ComponentFinderComponent } from './component-finder/component-finder.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreatePrototypeDialogComponent,
     OpenPrototypeDialogComponent,
+    ComponentFinderComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ import { ComponentsModule } from './components/components.module';
     MatDialogModule,
     MatSelectModule,
     MatBadgeModule,
+    MatInputModule,
     ReactiveFormsModule,
     HttpClientModule,
     TranslocoRootModule,
