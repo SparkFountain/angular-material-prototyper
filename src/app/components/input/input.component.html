@@ -2,4 +2,9 @@
   <mat-card-header>
     <mat-card-title>{{ 'componentToolbar.input' | transloco }}</mat-card-title>
   </mat-card-header>
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Favorite food</mat-label>
+    <input matInput placeholder="Ex. Pizza" value="Sushi" [formControl]="formControl" />
+  </mat-form-field>
 </mat-card>

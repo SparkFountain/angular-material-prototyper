@@ -1,5 +1,15 @@
 <mat-card>
   <mat-card-header>
-    <mat-card-title>{{ 'componentToolbar.tooltip' | transloco }}</mat-card-title>
+    <mat-card-title>{{
+      'componentToolbar.tooltip' | transloco
+    }}</mat-card-title>
   </mat-card-header>
+
+  <button
+    mat-raised-button
+    matTooltip="Info about the action"
+    aria-label="Button that displays a tooltip when focused or hovered over"
+  >
+    Action
+  </button>
 </mat-card>

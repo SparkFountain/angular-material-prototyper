@@ -2,4 +2,13 @@
   <mat-card-header>
     <mat-card-title>{{ 'componentToolbar.select' | transloco }}</mat-card-title>
   </mat-card-header>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Favorite food</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let food of foods" [value]="food.value">
+        {{ food.viewValue }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
 </mat-card>

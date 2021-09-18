@@ -2,7 +2,7 @@
 <mat-toolbar color="primary" class="primary-toolbar">
   <mat-toolbar-row>
     <span class="brand">
-      <a routerLink="">Angular Material Prototyper</a>
+      <a routerLink="/">Angular Material Prototyper</a>
     </span>
     <span class="menu-spacer"></span>
     <button mat-icon-button>
@@ -30,13 +30,13 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
-<!-- COMPONENT TOOLBAR: CHOOSE ANY MATERIAL COMPONENT -->
+<!-- COMPONENT TOOLBAR: DRAG MATERIAL COMPONENTS TO DROP IN PROTOTYPE -->
 <mat-toolbar class="component-toolbar">
   <mat-toolbar-row>
     <mat-form-field class="category-selector">
-      <mat-label>{{
-        'componentToolbar.category.choose' | transloco
-      }}</mat-label>
+      <mat-label>
+        {{ 'componentToolbar.category.choose' | transloco }}
+      </mat-label>
       <mat-select>
         <mat-option value="all" selected>
           {{ 'componentToolbar.category.all' | transloco }}
