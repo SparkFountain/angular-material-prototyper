@@ -1,5 +1,48 @@
 {
   "settings": {
     "server": "Server"
+  },
+  "elementToolbar": {
+    "category": {
+      "choose": "Choose a category",
+      "all": "All",
+      "buttons": "Buttons",
+      "inputs": "Inputs"
+    },
+    "autocomplete": "Autocomplete",
+    "badge": "Badge",
+    "bottomSheet": "Bottom Sheet",
+    "button": "Button",
+    "buttonToggle": "Button (Toggle)",
+    "card": "Card",
+    "checkbox": "Checkbox",
+    "chips": "Chips",
+    "datepicker": "Date Picker",
+    "dialog": "Dialog",
+    "divider": "Divider",
+    "expansionPanel": "Expansion Panel",
+    "formField": "Form Field",
+    "gridList": "Grid List",
+    "icon": "Icon",
+    "input": "Input",
+    "list": "List",
+    "menu": "Menu",
+    "paginator": "Paginator",
+    "progressBar": "Progress Bar",
+    "progressSpinner": "Progress Spinner",
+    "radioButton": "Radio Button",
+    "ripples": "Ripples",
+    "select": "Select",
+    "sideNav": "Side Nav",
+    "slideToggle": "Slide Toggle",
+    "slider": "Slider",
+    "snackbar": "Snackbar",
+    "sortHeader": "Sort Header",
+    "stepper": "Stepper",
+    "table": "Table",
+    "tabs": "Tabs",
+    "toolbar": "Toolbar",
+    "tooltip": "Tooltip",
+    "tree": "Tree"
   }
 }

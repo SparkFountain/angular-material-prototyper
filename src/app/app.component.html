@@ -1,6 +1,9 @@
-<mat-toolbar color="primary">
+<!-- TOP TOOLBAR: NEW PROTOTYPE / LOAD / SAVE / UNDO / REDO -->
+<mat-toolbar color="primary" class="primary-toolbar">
   <mat-toolbar-row>
-    <span class="brand"><a routerLink="">Angular Material Prototyper</a></span>
+    <span class="brand">
+      <a routerLink="">Angular Material Prototyper</a>
+    </span>
     <span class="menu-spacer"></span>
     <button mat-icon-button>
       <mat-icon>control_point</mat-icon>
@@ -22,8 +25,142 @@
       <mat-icon>menu</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>{{ "settings.server" | transloco }}</button>
+      <button mat-menu-item>{{ 'settings.server' | transloco }}</button>
     </mat-menu>
   </mat-toolbar-row>
 </mat-toolbar>
 
+<!-- ELEMENT TOOLBAR: CHOOSE ANY MATERIAL COMPONENT -->
+<mat-toolbar class="element-toolbar">
+  <mat-toolbar-row>
+    <mat-form-field class="category-selector">
+      <mat-label>{{ 'elementToolbar.category.choose' | transloco }}</mat-label>
+      <mat-select>
+        <mat-option value="all" selected>
+          {{ 'elementToolbar.category.all' | transloco }}
+        </mat-option>
+        <mat-option value="buttons">
+          {{ 'elementToolbar.category.buttons' | transloco }}
+        </mat-option>
+        <mat-option value="inputs">
+          {{ 'elementToolbar.category.inputs' | transloco }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <span class="menu-spacer"></span>
+
+    <!-- AUTOCOMPLETE -->
+    <app-autocomplete></app-autocomplete>
+
+    <!-- BADGE -->
+    <app-badge></app-badge>
+
+    <!-- BOTTOM SHEET -->
+    <app-bottom-sheet></app-bottom-sheet>
+
+    <!-- BUTTON -->
+    <app-button></app-button>
+
+    <!-- BUTTON (TOGGLE) -->
+    <app-button-toggle></app-button-toggle>
+
+    <!-- CARD -->
+    <app-card></app-card>
+
+    <!-- CHECKBOX -->
+    <app-checkbox></app-checkbox>
+
+    <!-- CHIPS -->
+    <app-chips></app-chips>
+
+    <!-- DATE PICKER -->
+    <app-datepicker></app-datepicker>
+
+    <!-- DIALOG -->
+    <app-dialog></app-dialog>
+
+    <!-- DIVIDER -->
+    <app-divider></app-divider>
+
+    <!-- EXPANSION PANEL -->
+    <app-expansion-panel></app-expansion-panel>
+
+    <!-- FORM FIELD -->
+    <app-form-field></app-form-field>
+
+    <!-- GRID LIST -->
+    <app-grid-list></app-grid-list>
+
+    <!-- ICON -->
+    <app-icon></app-icon>
+
+    <!-- INPUT -->
+    <app-input></app-input>
+
+    <!-- LIST -->
+    <app-list></app-list>
+
+    <!-- MENU -->
+    <app-menu></app-menu>
+
+    <!-- PAGINATOR -->
+    <app-paginator></app-paginator>
+
+    <!-- PROGRESS BAR -->
+    <app-progress-bar></app-progress-bar>
+
+    <!-- PROGRESS SPINNER -->
+    <app-progress-spinner></app-progress-spinner>
+
+    <!-- RADIO BUTTON -->
+    <app-radio-button></app-radio-button>
+
+    <!-- RIPPLES -->
+    <app-ripples></app-ripples>
+
+    <!-- SELECT -->
+    <app-select></app-select>
+
+    <!-- SIDE NAV -->
+    <app-side-nav></app-side-nav>
+
+    <!-- SLIDE TOGGLE -->
+    <app-slide-toggle></app-slide-toggle>
+
+    <!-- SLIDER -->
+    <app-slider></app-slider>
+
+    <!-- SNACKBAR -->
+    <app-snackbar></app-snackbar>
+
+    <!-- SORT HEADER -->
+    <app-sort-header></app-sort-header>
+
+    <!-- STEPPER -->
+    <app-stepper></app-stepper>
+
+    <!-- TABLE -->
+    <app-table></app-table>
+
+    <!-- TABS -->
+    <app-tabs></app-tabs>
+
+    <!-- TOOLBAR -->
+    <app-toolbar></app-toolbar>
+
+    <!-- TOOLTIP -->
+    <app-tooltip></app-tooltip>
+
+    <!-- TREE -->
+    <app-tree></app-tree>
+
+    <span class="menu-spacer"></span>
+    <button mat-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>{{ 'settings.server' | transloco }}</button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>

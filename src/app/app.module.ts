@@ -14,7 +14,11 @@ import { TranslocoRootModule } from './transloco/transloco-root.module';
 import { StoreModule } from '@ngrx/store';
 import { OpenPrototypeDialogComponent } from './open-prototype-dialog/open-prototype-dialog.component';
 import { CreatePrototypeDialogComponent } from './create-prototype-dialog/create-prototype-dialog.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatBadgeModule } from '@angular/material/badge';
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
   declarations: [
@@ -26,16 +30,21 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatAutocompleteModule,
     MatFormFieldModule,
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
     MatMenuModule,
     MatDialogModule,
+    MatSelectModule,
+    MatBadgeModule,
+    ReactiveFormsModule,
     HttpClientModule,
     TranslocoRootModule,
     StoreModule.forRoot({}, {}),
     FormsModule,
+    ComponentsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
